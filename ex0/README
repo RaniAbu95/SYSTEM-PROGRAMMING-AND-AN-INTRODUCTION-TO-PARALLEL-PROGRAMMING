@@ -1,0 +1,17 @@
+/**************************************************************************************************
+ * os1_abura_ex0: ex0a.c - printing the number of the biggest value row
+ * ================================================================================================
+ * written by: Rani Abu Raia
+ * user: abura
+ * id: 316396787
+ * date: 24th october 2021
+ * ================================================================================================
+ * this program reads list of number ordered in rows from a file input and stores it in a struct. 
+ * then the program calculates the biggest row value which is the row that contain the biggest 
+ * value in its colomns compared to all other rows colomns and prints it to the output file. if no
+ * such row -1 is printed.
+ * ================================================================================================
+ * Compile: gcc -Wall ex0.c -o ex0
+ * Run: ./ex0 input-file
+ * Run time: o(n^2)
+ ==================================================================================================

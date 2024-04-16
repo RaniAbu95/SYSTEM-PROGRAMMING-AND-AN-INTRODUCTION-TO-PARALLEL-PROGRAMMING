@@ -1,0 +1,28 @@
+/*****************************************************************************************************
+ * ===================================================================================================
+ * os1_abura_ex3
+ * ===================================================================================================
+ * written by: Rani Abu Raia
+ * user: abura
+ * id: 316396787
+ * date: 16th November 2021
+ =====================================================================================================
+ * ex3a.c: Father process create two child process, one uses Bubble sort and the   
+ * 		   second uses Quick sort to sort array of size 50,000 and repeats this 50 times.
+ * 		   each child write his result to the stdout and to the pipe. The father process
+ * 		   reads the messages that he recieved from the pipe and calculate the max,min
+ * 		   and average sorting time of each process.
+ * 		   In addition the father calculate its runtime of its self.
+
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex3a.c -o ex3a
+ * Run: ./ex3a
+ * Run time of father process in ex1a is 469.592473, run time of  father process in ex3a is 536.955368
+ * ===================================================================================================
+ * ex3b.c: this program generates three child process and each of them generate random
+ * 		   numbers and the father process collect all the numbers in the array and print
+ * 		   the number of distinct numbers in the array.
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex3b.c -o ex3b
+ * Run: ./ex3b
+ * ===================================================================================================

@@ -1,0 +1,73 @@
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+
+ * The tgz file contains 5 (.c) files and a README file.
+ * and beneath we got more information about each source file code.
+  
+===============================================================================
+File: ex6a1.c 
+===============================================================================
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ * 
+ * DESCRIPTION: this program works as a  server, the server has to fill araay
+ *				of size 1000 with random prime numbers from the client, when all
+ * 				cells of array are filled  the server sends message to all 
+ * 				cleints to end and print distinct,max and min in the array.
+ *
+ * compile: gcc ex6a1.c -o ex6a1
+ * run: ./ex6a1 <PORT>
+
+===============================================================================
+File: ex6a2.c 
+===============================================================================
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *
+ * DESCRIPTION: this program works as clients server, which allows client to
+ * 				send numbers to server in order to put it in the array,
+ * 				clients stop sending numbers when all cells of the array are 
+ *				filled. when finished clients prints how many new numbers were
+ *				sent and what is the max apperance of a given number sent.
+ *
+ * compile: gcc ex6a2.c -o ex6a2
+ * run: ./ex6a2 <ID> <HOST_NAME> <PORT>
+
+===============================================================================
+File: ex6b1.c 
+===============================================================================
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *
+ *  DESCRIPTION: this is a primacy server which creates a stream socket 
+ *				 and recieves a number from the client through this 
+ *				 socket.the server checks whether the number is prime
+ *				 or not and send apropriate message to the client
+ *				 (either 1 if it is a prime num or 0 if not).
+ *
+ * compile: gcc ex6b1.c -o ex6b1
+ * run: ./ex6b1 <PORT1>
+===============================================================================
+File: ex6b2.c 
+===============================================================================
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *
+ *  DESCRIPTION: this is a palindrome server which creates a stream socket 
+ *				 and recieves a string from the client through this socket. 
+ *				 the server checks whether the string is palindrome or not and
+ *				 send apropriate message to the client (either 1 if it is
+ *				 palindrome string or 0 if not).
+ *
+ * compile: gcc ex6b2.c -o ex6b2
+ * run: ./ex6b2 <PORT2>
+
+===============================================================================
+File: ex5b3.c 
+===============================================================================
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *
+ *  DESCRIPTION: this program running a client sockit which interact with two
+ *   			 servers.the client recieves inputs from the user(p for int
+ *				 and q for string).recieve output from this server based on the
+ * 				 input - if p entered checks if the number is prime, if q checks
+ *				 if the string is palindrome and print the answer.
+ *
+ * compile: gcc ex6b3.c -o ex6b3
+ * run: ./ex6b3 <IP> <PORT1> <IP> <PORT2>
+

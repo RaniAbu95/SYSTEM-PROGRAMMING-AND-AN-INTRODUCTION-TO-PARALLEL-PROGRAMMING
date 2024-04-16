@@ -1,0 +1,55 @@
+/*****************************************************************************************************
+ * ===================================================================================================
+ * os1_abura_ex4
+ * ===================================================================================================
+ * written by: Rani Abu Raia
+ * user: abura
+ * id: 316396787
+ * date: 1th December 2021
+ =====================================================================================================
+ * ex4a1.c: this program runs as an application server , before start the server wait tell 
+ * 			he gets the numbers of all clients. after that he gets a random numbers from each
+ * 			client and stores it in array. for each random number the 
+ * 			server gets he return a feedback as integer which represents the apperance
+ * 			times for this number in the array. after the array is full the server sends
+ * 			end message to all clients.
+ * 			when finished the server prints how many distincit numbers he has in the array
+ * 			and what is the max and the min numbers.
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex4a1.c -o ex4a1
+ * Run: ./ex4a1 fifo0 fifo1 fifo2 fifo3
+ * ===================================================================================================
+ * ex4a2.c: this program runs as a client. first it sends it's file number for the  server,
+ * 			then itgenerates a random number  and check if it  is a prime number.
+ * 			for each number the client send it gets a feedback from a server that indicates
+ * 			how much this numbers appears in the storing array. when the storing array 
+ * 			is ready the client gets ending feedback and prints how many numbers it 
+ * 			send was new and prints the max times sent of a number.
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex4a2.c -o ex4a2
+ * Run: ./ex4a2 fifo0 <file_num>
+ * ===================================================================================================
+ * ex4b1.c: this program runs as an application server that comunicates this it's clients
+ * 			through a message queue. before start the server wait tell 
+ * 			he gets the numbers of all clients. after that he gets a random numbers from each
+ * 			client and stores it in array. for each random number the 
+ * 			server gets he return a feedback as integer which represents the apperance
+ * 			times for this number in the array. after the array is full the server sends
+ * 			end message to all clients.
+ * 			when finished the server prints how many distincit numbers he has in the array
+ * 			and what is the max and the min.
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex4b1.c -o ex4b1
+ * Run: ./ex4b1
+ * ===================================================================================================
+ * ex4b2.c: this program runs as a client which comunicate with the server through a
+ * 			message queue. first it sends it's file number for the  server,
+ * 			then itgenerates a random number  and check if it  is a prime number.
+ * 			for each number the client send it gets a feedback from a server that indicates
+ * 			how much this numbers appears in the storing array. when the storing array 
+ * 			is ready the client gets ending feedback and prints how many numbers it 
+ * 			send was new and prints the max times sent of a number.
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex4b2.c -o ex4b2
+ * Run: ./ex4b2 <generator_num>
+ * ===================================================================================================

@@ -1,0 +1,63 @@
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ * The tgz file contains 5 (.c) files and a README file.
+ * and here more information about each source file code.
+  
+=============================================================
+File: ex5a1.c 
+=============================================================
+ * DESCRIPTION: this program works with shared data,
+ * its a server which creae array of 995 number and 
+ * the client should fill it with prime numbers.
+ * after the array is full the prog prints how much
+ * distinct numbers it have what is the min and max.
+ *
+ * compile: gcc ex5a1.c -o ex5a1
+ * run: ./ex5a1
+
+ * Notes:
+ * there are so many running options, the 3 process could work differently
+ * such as the first process can fill most of the array numbers,
+ * same case for second process and third process, each process can find
+ * different number of numbers.
+=============================================================
+File: ex5a2.c 
+=============================================================
+ * DESCRIPTION: this program works with shared memory,
+ * it works as clients which fill the shared array with numbers
+ * when it's full it prints how many numbers was added as new 
+ * and from all numbers sent what is the max apperance of a given number.
+ 
+ * compile: gcc ex5a2.c -o ex5a2
+ * run: ./ex5a2 <process_num>
+
+=============================================================
+File: ex5b1.c 
+=============================================================
+ *
+ * DESCRIPTION: this program works with shared memory, 
+ * it works as a PRIME server.
+ *
+ * compile: gcc ex5b1.c -o ex5b1
+ * run: ./ex5b1
+
+=============================================================
+File: ex5b2.c 
+=============================================================
+ *
+ * DESCRIPTION: this program works with shared memory, 
+ * it works as a palindrome checker server.
+ *
+ * compile: gcc ex5b2.c -o ex5b2
+ * run: ./ex5b2
+
+=============================================================
+File: ex5b3.c 
+=============================================================
+ * DESCRIPTION: this program works with shared memory,
+ * this program works as clients, sending numbers to other
+ * servers to work with. 
+ * this program shares data with a PRIME and PALINDROME servers.
+ *
+ * compile: gcc ex5b3.c -o ex5b3
+ * run: ./ex5b3
+

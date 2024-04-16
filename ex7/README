@@ -1,0 +1,43 @@
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *
+ * The tgz file contains 2 (.c) files and a README file.
+ * and beneath we got more information about each source file code.
+  
+=====================================================================================
+File: ex7a.c 
+=====================================================================================
+ *
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ * 
+ * DESCRIPTION: this program works as a array program, the program has
+ * 				about 50000 random numbers, the program gets prime numbers
+ * 				from clients "threads" to add. when array is full each thread
+ * 				stop running and print what is the is the most common number 
+ * 				found in the array from all numbers was sent and how many new
+ * 				numbers where send. and after all threads finish the main prog
+ * 				prints how many distinct numbers in the array what is the max
+ * 				and the min and exit.
+ *
+ * compile: gcc ex7a.c -o ex7a -lpthread
+ * run: ./ex7a
+=====================================================================================
+File: ex7b.c 
+=====================================================================================
+ *
+ * Written by: Rani Abu Raia, id = 316396787, login = abura
+ *             
+ *
+ * DESCRIPTION: this program creates 4 threads (MAIN , PRIME,PALINDROME,
+ *				CLIENTS ). the main thread creates the other threads then
+ *				saves their id's in a global array and finishes his work,
+ *				the clients thread gets from user what operation he asks
+ *				to do ( PRIME or PALINDROME ) then gets the needed numbers
+ *				from user and sends a signal to the thread who needs them,
+ *				the thread makes the demanded process and updates the solution
+ *				to the program, then sends back a signal to the client to
+ *				inform him the solution is ready and the program is ready for 
+ *				another client.
+ *
+ *
+ * compile: gcc ex7b.c -o ex7b
+ * run: ./ex7b

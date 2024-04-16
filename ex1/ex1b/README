@@ -1,0 +1,17 @@
+/**************************************************************************************************
+ * os1_abura_ex1a - Timer exercise.
+ * ================================================================================================
+ * written by: Rani Abu Raia
+ * user: abura
+ * id: 316396787
+ * date: 3th November 2021
+ * ================================================================================================
+ * Father process create two child process, one uses Bubble sort and the   
+ * second uses Quick sort to sort array of size 50,000 repeating this 50 times. prints the results
+ * of each child process to an output files and calculate the max,min and average runtime of each
+ * sorting method. In addition the father calculate its runtime of its self.
+ * ================================================================================================
+ * Compile: gcc -Wall ex1a.c -o ex1
+ * Run: ./ex1 input-file srand
+ * Run time of father process: 469.592473
+ ==================================================================================================

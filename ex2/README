@@ -1,0 +1,38 @@
+/*****************************************************************************************************
+ * ===================================================================================================
+ * os1_abura_ex2
+ * ===================================================================================================
+ * written by: Rani Abu Raia
+ * user: abura
+ * id: 316396787
+ * date: 3th November 2021
+ =====================================================================================================
+ * ex2a.c : the main process execute child process which runs in infinite loop, in each iteration he 
+ * performs a random number whenever he performs 100,000 numbers he finishes.
+ * if the child finishes his mission in less than 1 secs he prints "1"and exits, if he finishes within
+ *  2 secs he prints "2" and exits, if he doesn't finishes in less that 2 secs the main process kills
+ *  him and prints "0".
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex2a.c -o ex2a
+ * Run: ./ex2a
+ * ===================================================================================================
+ * ex2b.c : this program has 2 processes - dad and child.
+ * 			each process run in infinite loop, goes sleeping for 3 seconds(max)
+ *  		and Performs a random of numbers.
+ * 			the chosen number can be 0 or 1 or 2.
+ *
+ *			if the chosen number is 0, the current process ends.
+ *			
+ *			if the chosen number is 1 or 2, the current process sends signal SIGUSR1/SIGUSR2
+ *			(depending on the received signal) to the second process. else, he sends signal siguser2.
+ *
+ *	 		each siguser has counter, that counts how much this signal appears.
+ *
+ *	 		while one of them appers 5 times, the program prints which process
+ *	 		"surrender", and sends sigterm to the second signal and finish.
+ *
+ *	 		the sigterm prints which process "won".
+ * ---------------------------------------------------------------------------------------------------
+ * Compile: gcc -Wall ex2b.c -o ex2b
+ * Run: ./ex2b
+ * ===================================================================================================
